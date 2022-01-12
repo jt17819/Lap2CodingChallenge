@@ -1,0 +1,51 @@
+html {
+    font-family: 'Lucida Grande',Arial,sans-serif
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 767px;
+    margin: auto;
+    padding: 21px 0;
+    position: relative;
+}
+
+#postForm input[id="postTitle"],
+#postForm input[id="postAuthor"],
+#postForm input[id="postContent"],
+#postForm textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    margin: 21px 21px 12px;
+    position: relative;
+}
+
+#postForm input[type="submit"] {
+    position: absolute;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 2px solid #333;
+    border-radius: 16px;
+    cursor: pointer;
+    margin: 0 0 15px;
+    background-color: #fff;
+    padding: 4px 12px;
+    left: 50%;
+    top:0;
+    right: 0;
+    margin: 46px 0 0 376px;
+}
+
+#postForm input:focus,
+#postForm textarea:focus {
+    outline: none;
+}
+
+#postForm #postTitle {
+    font-size: 32px;
+}

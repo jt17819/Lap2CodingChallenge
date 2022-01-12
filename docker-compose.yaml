@@ -1,0 +1,28 @@
+version: '3'
+services:
+  server:
+    image: node:latest
+    working_dir: /code
+    ports: 
+      - 3000:3000
+    environment: 
+      - DB_NAME=
+      - DB_CONNECTION=
+    depends_on:
+      - db
+    volumes:
+      - type: bind
+        source: ./server
+        target: /code
+    command: bash -c "npm install && npm start"
+
+  db:
+    image: mongo:4.4
+    volumes:
+      - "dbdata:/var/lib/mongodb/data"
+    environment: 
+      - MONGO_INITDB_ROOT_USERNAME=
+      - MONGO_INITDB_DATABASE=
+      - MONGO_INITDB_ROOT_PASSWORD=
+volumes:
+  dbdata:
