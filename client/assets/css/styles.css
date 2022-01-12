@@ -49,3 +49,30 @@ body {
 #postForm #postTitle {
     font-size: 32px;
 }
+
+#postForm h1 {
+    position: relative;
+}
+
+.container h1 {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    margin: 21px 21px 12px;
+    line-height: 34px;
+}
+
+address {
+    font-size: 15px;
+    line-height: 18px;
+    color: #79828B;
+    margin: 12px 21px;
+    font-style: normal;
+}
+
+.container p {
+    margin: 12px 21px;
+    border: solid 3px black;
+    padding: 10px;
+    border-radius: 15px;
+}
